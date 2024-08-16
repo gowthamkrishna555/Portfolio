@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+nav {
+    position: fixed; /* Fixes the navbar at the top */
+    top: 0;
+    left: 0; /* Aligns navbar to the left edge */
+    width: 100%; /* Ensures the navbar spans the full width */
+    min-width: 100%; /* Ensures the navbar does not shrink below full width */
+    background: white; /* Background color for visibility */
+    z-index: 1000; /* Ensures the navbar stays above other content */
+    display: flex;
+    padding: 10px 0; /* Reduced padding to decrease height */
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for better visibility */
+}
+
+nav img {
+    height: 120px; /* Increased size of the image */
+    margin-left: 20px; /* Optional: add margin to move the image to the right */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center; /* Ensure items are vertically centered */
+    margin-right: 20px; /* Add margin to the right if needed */
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px; /* Adjusted margin to fit new height */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center the content */
+    padding-top: 70px; /* Adds space below the fixed navbar */
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px; /* Limit the maximum width of the content */
+}
+.hero .social-links {
+    margin-top: 20px; /* Space above the icons */
+}
+
+.hero .social-links a {
+    margin: 0 10px; /* Space between icons */
+    display: inline-block;
+    background-color: white;
+}
+
+.hero .social-links img {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px;
+    transition: transform 0.3s ease;
+    background-color: white;
+}
+
+.hero .social-links img:hover {
+    transform: scale(1.1); /* Add a slight zoom effect on hover */
+}
+
+
+.text {
+    max-width: 50%;
+    padding-right: 20px; /* Adds space between text and image */
+}
+
+.tech-image img {
+    width: 100%; /* Image takes full width of its container */
+    max-width: 400px; /* Set a max width to control the image size */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.detel {
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+.detel h1 {
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+span {
+    color: orangered;
+}
+
+.detel p {
+    color: chocolate;
+    line-height: 22px;
+}
+
+.detel a {
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: burlywood;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.images {
+    width: 45%;
+    height: 88%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img {
+    height: 100%;
+    position: absolute;
+    left: 0; /* Adjusted positioning */
+    bottom: 0; /* Adjusted positioning */
+    transform: translate(-50%, 0); /* Adjusted transform */
+    transition: bottom 1s, left 1s;
+}
+
+.contact, .about, .skills, .projects {
+    padding: 20px; /* Add padding if needed */
+    background: white; /* Ensure a consistent background */
+    margin: 0; /* Remove extra margin */
+}
+
+.contact {
+    display: flex;
+    flex-direction: column; /* Stacks children vertically */
+    align-items: center; /* Centers children horizontally */
+    justify-content: center; /* Centers children vertically */
+    text-align: center; /* Centers text within the container */
+}
+
+.contact h2 {
+    margin-bottom: 10px; /* Space below the heading */
+    color: chocolate;
+}
+
+.contact p {
+    margin-bottom: 20px; /* Space below the message */
+}
+
+.contact form {
+    max-width: 600px;
+    width: 100%; /* Ensures form takes up full width within contact section */
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact .form-group {
+    margin-bottom: 20px;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact textarea {
+    resize: vertical;
+}
+
+.contact button {
+    background: orangered;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact button:hover {
+    background: darkorange;
+}
+
+.about h2, .skills h2, .projects h2, .contact h2 {
+    color: blue;
+    text-decoration: underline solid 3px; /* 3px solid underline */
+    margin-bottom: 10px; /* Minimal space below headings */
+}
+
+/* Ensure no extra space between sections */
+section {
+    margin: 0; /* Remove margin from sections */
+    padding: 0; /* Remove padding from sections */
+}
+
+.projects {
+    background: white; /* Ensures a consistent background */
+    padding: 20px; /* Add padding if needed */
+    margin-top: 0; /* Remove top margin to position section higher */
+    position: relative; /* Adjust if needed based on layout */
+}
+
+/* Add additional styles to adjust spacing or position if needed */
