@@ -1,4 +1,8 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Sanitize and validate input data
     $name = htmlspecialchars(strip_tags(trim($_POST["name"])));
@@ -35,5 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "Sorry, something went wrong. Please try again later.";
     }
+} else {
+    echo "Invalid request method.";
 }
 ?>
