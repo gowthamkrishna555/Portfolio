@@ -34,7 +34,7 @@ exports.handler = async (event) => {
     // Define the email options
     let mailOptions = {
       from: email,
-      to: 'your-email@example.com', // Replace with your email address
+      to: 'gowthambhat550@gmail.com', // Replace with your email address
       subject: `Contact Form Submission from ${name}`,
       html: `
         <html>
